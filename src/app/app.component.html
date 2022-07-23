@@ -1,0 +1,7 @@
+
+<p 
+(click)="navegarParaHome()">home</p>
+<p (click)="navegarParaHelp()">help</p>
+<router-outlet></router-outlet>
+
+<app-help [usersList]="users" (deleteItem)="deletarItemDoArray($event)"></app-help>
